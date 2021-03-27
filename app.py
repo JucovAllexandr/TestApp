@@ -2,6 +2,10 @@
 from flask import Flask
 app = Flask(__name__)
 
+@app.route('/')
+def returnHome():
+    return "Hello world"
+
 @app.route('/<random_string>')
 def returnBackwardsString(random_string):
     """Reverse and return the provided URI"""
