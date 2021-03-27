@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def returnHome():
-    return "Hello world"
+    return "Hello world!"
 
 @app.route('/<random_string>')
 def returnBackwardsString(random_string):
